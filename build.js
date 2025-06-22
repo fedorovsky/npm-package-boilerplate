@@ -8,7 +8,7 @@ await build({
   outdir: 'dist/lib',
   logLevel: 'info',
   treeShaking: true,
-  sourcemap: true,
+  sourcemap: false,
   minify: false,
   external: ['react', 'react/jsx-runtime'],
   entryNames: '[name]',
