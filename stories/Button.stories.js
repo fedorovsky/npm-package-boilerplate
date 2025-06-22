@@ -1,6 +1,6 @@
 import { fn } from 'storybook/test';
 
-import { Button } from '../src/components/button';
+import { Button } from '../src';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
