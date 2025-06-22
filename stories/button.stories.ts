@@ -1,6 +1,6 @@
 import { fn } from 'storybook/test';
 
-// import { Button } from '../src';
+// import { Button } from '../lib';
 import { Button } from '../dist';
 
 export default {

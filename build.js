@@ -2,14 +2,13 @@ import { build } from 'esbuild';
 import { resolve } from 'path';
 
 await build({
-  entryPoints: [resolve('src/index.ts')],
+  entryPoints: [resolve('lib/index.ts')],
   bundle: true,
   format: 'esm',
-  outdir: 'dist',
+  outdir: 'dist/lib',
   minify: false,
   external: ['react', 'react/jsx-runtime'],
   entryNames: '[name]',
-  assetNames: 'assets/[name]',
   target: 'es2020',
   jsx: 'automatic',
   jsxImportSource: 'react',
