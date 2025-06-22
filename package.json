@@ -40,8 +40,5 @@
   },
   "files": [
     "dist/lib"
-  ],
-  "dependencies": {
-    "esbuild-css-modules-plugin": "^3.1.5"
-  }
+  ]
 }
