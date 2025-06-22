@@ -1,6 +1,6 @@
 {
   "name": "@fedorovskyi/my-component-library",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "npm-package-boilerplate",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
