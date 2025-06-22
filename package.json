@@ -1,9 +1,21 @@
 {
-  "name": "npm-package-boilerplate",
+  "name": "@fedorovskyi/my-component-library",
   "version": "1.0.0",
   "description": "npm-package-boilerplate",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
+    "clean": "rm -rf dist",
+    "build:types": "tsc --project tsconfig.json",
+    "build:js": "node build.js",
+    "build": "npm run clean && npm run build:types && npm run build:js",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,md}\"",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -21,8 +33,15 @@
     "@types/node": "^20.11.30",
     "@types/react": "^18.2.71",
     "@types/react-dom": "^18.2.22",
+    "esbuild": "^0.25.5",
     "prettier": "^3.5.3",
     "prop-types": "^15.8.1",
     "storybook": "^9.0.12"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "esbuild-css-modules-plugin": "^3.1.5"
   }
 }
