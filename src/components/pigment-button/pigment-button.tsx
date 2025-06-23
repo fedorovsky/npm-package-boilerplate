@@ -4,7 +4,6 @@ import { css, styled } from '@pigment-css/react';
 const button = css({
   border: '1px solid blue',
   fontSize: '16px',
-  color: '{colors.primary}',
 });
 
 const Heading = styled('div')({
