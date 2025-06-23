@@ -1,7 +1,7 @@
 import { fn } from 'storybook/test';
 
-import { Button } from '../lib';
-// import { Button } from '../dist/lib';
+import { Button } from '../src';
+// import { Button } from '../dist/src';
 
 export default {
   title: 'Example/Button',

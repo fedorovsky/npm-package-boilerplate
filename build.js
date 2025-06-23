@@ -2,10 +2,10 @@ import { build } from 'esbuild';
 import { resolve } from 'path';
 
 await build({
-  entryPoints: [resolve('lib/index.ts')],
+  entryPoints: [resolve('src/index.ts')],
   bundle: true,
   format: 'esm',
-  outdir: 'dist/lib',
+  outdir: 'dist',
   logLevel: 'info',
   treeShaking: true,
   sourcemap: false,
