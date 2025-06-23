@@ -46,6 +46,7 @@
     "dist/lib"
   ],
   "dependencies": {
-    "@pigment-css/react": "^0.0.30"
+    "@pigment-css/react": "^0.0.30",
+    "@pigment-css/unplugin": "^0.0.30"
   }
 }
