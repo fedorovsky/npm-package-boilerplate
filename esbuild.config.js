@@ -9,7 +9,7 @@ await build({
   logLevel: 'info',
   treeShaking: true,
   sourcemap: false,
-  minify: false,
+  minify: true,
   external: ['react', 'react/jsx-runtime'],
   entryNames: '[name]',
   target: 'es2020',

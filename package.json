@@ -15,7 +15,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build:types": "tsc --project tsconfig.json",
-    "build:js": "node build.js",
+    "build:js": "node esbuild.config.js",
     "build": "npm run clean && npm run build:types && npm run build:js",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,md}\"",
     "storybook": "storybook dev -p 6006",
