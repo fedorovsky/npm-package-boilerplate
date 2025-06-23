@@ -4,7 +4,18 @@ import wyw from '@wyw-in-js/vite';
 import path from 'path';
 
 export default defineConfig({
-  plugins: [dts(), wyw()],
+  plugins: [
+    dts(),
+    wyw({
+      include: ['src/**/*.{ts,tsx}'],
+      babelOptions: {
+        presets: [
+          '@babel/preset-typescript',
+          ['@babel/preset-react', { runtime: 'automatic' }],
+        ],
+      },
+    }),
+  ],
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
