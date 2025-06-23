@@ -4,7 +4,7 @@ import { Button } from '../src';
 // import { Button } from '../dist/src';
 
 export default {
-  title: 'Example/Button',
+  title: 'Button',
   component: Button,
   parameters: {
     layout: 'centered',

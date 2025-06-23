@@ -28,15 +28,13 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@pigment-css/vite-plugin": "^0.0.30",
     "@storybook/addon-docs": "^9.0.12",
     "@storybook/react-vite": "^9.0.12",
     "@types/node": "^20.11.30",
     "@types/react": "^18.2.71",
     "@types/react-dom": "^18.2.22",
-    "esbuild": "^0.25.5",
+    "@wyw-in-js/vite": "^0.7.0",
     "prettier": "^3.5.3",
-    "prop-types": "^15.8.1",
     "storybook": "^9.0.12",
     "typescript": "^5.8.3",
     "vite": "^6.3.5",
@@ -46,7 +44,8 @@
     "dist/lib"
   ],
   "dependencies": {
-    "@pigment-css/react": "^0.0.30",
-    "@pigment-css/unplugin": "^0.0.30"
+    "@linaria/core": "^6.3.0",
+    "@linaria/react": "^6.3.0",
+    "@wyw-in-js/babel-preset": "^0.7.0"
   }
 }
