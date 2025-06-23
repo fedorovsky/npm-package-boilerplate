@@ -2,23 +2,20 @@
   "name": "@fedorovskyi/my-component-library",
   "version": "1.0.11",
   "description": "npm-package-boilerplate",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.es.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
+      "import": "./dist/index.es.js",
       "types": "./dist/index.d.ts"
     },
-    "./index.css": "./dist/index.css"
+    "./index.css": "./dist/my-component-library.css"
   },
   "scripts": {
-    "vite": "vite build",
     "clean": "rm -rf dist",
-    "transform": "pigment src --outDir .pigment",
-    "build:types": "tsc --project tsconfig.json",
-    "build:js": "node esbuild.config.js",
-    "build": "npm run clean && npm run build:types && npm run build:js",
+    "build": "npm run clean && vite build",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,md}\"",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
